@@ -135,52 +135,7 @@ resource "aws_instance" "web-service-instance" {
 
  
 
-  # provisioner "remote-exec" {
-  #   connection {
-  #     type        = "ssh"
-  #     host        = self.public_ip
-  #     user        = "ubuntu"
-      
-
-  #   }
-  #   inline = [
-  #     "sudo apt update -y",
-  #     "sudo apt install apache2 -y",
-  #     "sudo systemctl start apache2",
-  #     "sudo bash -c 'echo This is my web server > /var/www/html/index.html'",
-  #     "sudo apache2ctl configtest",
-  #     "sudo apache2ctl restart",
-  #   ]
-  # }
-
-  # provisioner "file" {
-  #   source      = "${path.module}/./BMI-WEB/" 
-  #   destination = "/var/www/html/" 
-
-  #   connection {
-  #     type        = "ssh"
-  #     host        = self.public_ip
-  #     user        = "ubuntu"
-      
-
-  #   }
-  # }
-
-  
-
 }
-
-# echo 'export PATH="$PATH:/path/to/terraform"' >> ~/.bash_profile
-
-# source ~/.bash_profile
-
-  # user_data = <<-EOF
-  #             sudo apt update -y
-  #             sudo apt install apache2 -y
-              
-  #             sudo systemctl start apache2
-  #             sudo bash -c 'echo This is my web server > /var/www/html/index.html'
-  #             EOF
 
 
 
