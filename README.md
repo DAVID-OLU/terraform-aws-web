@@ -5,10 +5,15 @@ The code/projects illustrates the launching of a simple webpage on AWS using the
 It is neccessary to ensure the following details prior to starting:
 
 Have a AWS Account
+
 Ensure that the Amazon Web Service CLI is configured with the correct and right permissions.
+
 Ensure to have Terraform installed on your computer. Here is a link to download Terraform (https://www.terraform.io/downloads.html)
+
 Set up your SSH key pair in other to access the Elastic Compute Cloud instance.
-Installation
+
+
+## Installation
 Step 1: Clone the Repository
 
   git clone
@@ -25,7 +30,9 @@ Step 4: Plan the Infrastructure
 Step 5: Run the Terraform Apply
 
     terraform Apply
-Deployment
+
+
+## Deployment
 To install and enable Apache2 on this project run.
 
   sudo systemctl enable apache2
@@ -34,7 +41,8 @@ You can also check to make sure apache2 is enabled by running:
   sudo systemctl status apache2
 Ensure you are connected to your EC2 instance before running the above commands.
 
-🔗 Links
+
+## 🔗 Links
 Terraform Documentation (https://registry.terraform.io/)
 
 AWS Documentation (https://docs.aws.amazon.com/)
@@ -45,11 +53,12 @@ Wget (https://www.gnu.org/software/wget/)
 
 Gitignore Documentation (https://git-scm.com/docs/gitignore)
 
+
 To view the hosted webpage on the AWS server, the below Public IPv4 Address can be copied into a new window tab.
 
 Public IPv4 Address: 100.27.95.114
 
-Tech Stack
-IaC Tool: Terraform
-
+## Tech Stack
+ IaC Tool: Terraform
+ 
 Development Platform: VS code, Terminal
